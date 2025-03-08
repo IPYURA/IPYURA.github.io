@@ -67,10 +67,11 @@
   },
   "lint-staged": {
     "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix"
+      "eslint --fix",
+      "prettier --check"
     ],
     "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-      "prettier --write"
+      "prettier --check"
     ]
   },
   "packageManager": "yarn@3.6.1"
